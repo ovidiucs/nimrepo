@@ -1,5 +1,5 @@
 import terminal
-from strutils import repeat
+    from strutils import repeat
 from strformat import fmt
 from typetraits import arity
 from os import splitFile
