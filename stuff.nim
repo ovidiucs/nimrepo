@@ -117,3 +117,10 @@ echo foo3
 template foo3(): untyped =
   [1, 2]
 echo foo3
+
+
+proc abc(str:string) =
+  echo str 
+
+
+echo abc("test")
