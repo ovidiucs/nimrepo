@@ -1,4 +1,9 @@
 # Copyright 2019.
+# This module contains helpers for parsing tokens, numbers, integers, floats, identifiers, etc.
+
+# To unpack raw bytes look at the streams module.
+# parseutils, streams -> parsing
+
 import parseutils
 import terminal
 
