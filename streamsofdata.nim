@@ -30,11 +30,3 @@ while ss.readline(line):
   echo line
 ss.close
 
-let
-  x = [0, 1, 2]
-  a = len([0, 1, 2]) # ok
-  b = len @[0, 1, 2]  # ok
-  c = len x # ok
-  d = len [0, 1, 2] # fails
-
-echo x,a,b,c,d
