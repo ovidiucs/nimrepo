@@ -10,3 +10,9 @@ var a {.noInit.}: array[0 .. 1023, char]
 
 const size = 6
 type A = range[0 .. (size-1)]
+
+echo "Union ... ", {'a' .. 'd'} + {'e' .. 'h'} 
+echo "Intersection ... ", {'a' .. 'd'} * {'c' .. 'z'}
+echo "Difference ... ", {'a' .. 'h'}
+echo "Equal: ", {'a' .. 'c'} == {'a' .. 'c'}
+echo "Subset or Equal: ", {'a' .. 'c'} <= {'a' .. 'v'}
