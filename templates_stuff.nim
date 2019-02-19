@@ -6,7 +6,7 @@ from os import sleep
 ## * A template operates on Nim's abstract syntax trees.
 ## * A template generates procedures.
 ## * A template can accept multiple parameters such as variables or type names.
-## * A template is injected into the main scope as is.
+## * A template however will inject its content at the place where you call it as if you copy pasted its content there.
 ## * A tempalte is processed in the semantic pass of the compiler.
 ## * A template in nim is a simple declarative macro
 ## * It provides a substitution mechanism that allows you to substitute
@@ -21,6 +21,7 @@ from os import sleep
 ## * A template is not a proc. return doesn't work as you expect it to.
 ## * A template is a way to use one function in multiple scenarios.
 ## * Document precisely the variables that are injected by the template.
+
 
 ## Example:
 ##
@@ -57,7 +58,7 @@ foo():
 template `!=` (a,b: untyped): untyped =
    not (a == b)
 
-assert(5 != 6)
+doAssert(5 != 6)
 
 ## Details about types:
 ##
@@ -142,5 +143,13 @@ template repeat (statements: untyped) =
 #  echo("Whoaa!")
 #  sleep(1000)
 
+## Tenplate with macros
+template repeatM(n: static[Natural], body: untyped): untyped =
+  for _ in 0 ..< n:
+    body
+
+repeatM(4):
+  echo "Hi"
+  sleep(505)
 
 
