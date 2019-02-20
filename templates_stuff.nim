@@ -21,7 +21,8 @@ from os import sleep
 ## * A template is not a proc. return doesn't work as you expect it to.
 ## * A template is a way to use one function in multiple scenarios.
 ## * Document precisely the variables that are injected by the template.
-
+## * Templates are big quasi quotes
+## * Templates and macros are metaprogramming which is basically writing code that writes code.
 
 ## Example:
 ##
