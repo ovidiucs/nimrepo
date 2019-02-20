@@ -6,11 +6,12 @@ concurency is easier here but meh..
 List of things to pin down:
 
 - [ ] iterators
-- [ ] ufcs
+- [x] ufcs
 - [ ] closures
-- [ ] templates
+- [x] templates
 - [ ] macros
 - [ ] generics
+- [ ] concepts
 - [ ] types and typesets
 - [ ] enums
 - [ ] async
