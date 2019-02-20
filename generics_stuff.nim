@@ -7,9 +7,11 @@
 ## * Generics are a type based macro system on top of another macro system.
 ## * Generics are some what similar to c++ templates
 ## * Generics are typechecked after expansion.
+## *  generics are checked at instantiation time
 ## * Generics are a way to create code that works on a range of type.
 ## * The usage of T within the generic function is what defines the typeclass so to speak.
-
+## * in general generics are just something like type "variables" : e.g. proc reprT (value: T): 
+##   string makes something with value for every possible T type
 proc `+`(a,b: string): string =
     a & b
 
