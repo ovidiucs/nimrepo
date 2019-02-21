@@ -4,6 +4,8 @@
 ## * more advanced then templates.
 ## * macros is procedural (it describes how code should be produced at compile time)
 ## * templates are declarative (the produced code that should be put in the calling scope is written)
+## * code generators
+
 import macros
 
 dumpTree:
