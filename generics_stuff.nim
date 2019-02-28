@@ -23,4 +23,3 @@ proc `*`[T](a: T, b: int): T =
 
 echo("a" * 10)
 
-echo ("10" + "10")
