@@ -2,3 +2,8 @@ image: archlinux/base
 
 stages:
   - test
+
+job1:
+  script:
+    - uname -a
+    - nim -v
