@@ -6,4 +6,5 @@ stages:
 job1:
   script:
     - uname -a
+    - pacman -Q | wc -l
     - nim -v
