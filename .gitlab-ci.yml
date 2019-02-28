@@ -1,10 +1,8 @@
-image: archlinux/base
+image: yglukhov/nim-base
 
 stages:
   - test
 
 job1:
   script:
-    - uname -a
-    - pacman -Q | wc -l
-    - nim -v
+    nim -v
