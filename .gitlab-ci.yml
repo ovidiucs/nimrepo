@@ -1,0 +1,4 @@
+image: archlinux/base
+
+stages:
+  - test
