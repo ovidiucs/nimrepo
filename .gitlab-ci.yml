@@ -2,7 +2,20 @@ image: yglukhov/nim-base
 
 stages:
   - test
+  - build
+  - deploy
 
-job1:
+test:
+  stage: test
+  script: echo "running test"
+
+build:
+  stage: build
+  script: echo "build stage"
+
+deploy_staging:
+  stage: deploy
   script:
-    nim -v
+    - echo "Deploy to staging server"
+  only:
+    - maser
