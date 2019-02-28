@@ -1,7 +1,10 @@
 # nimrepo
+
 Just messing about in this language. Comming with a bit of python the language has some nice feature such as C compilation and also JS,
 python-like syntax, static typing vs dynamic i'm meh..., custom GC, tunable GC, statically linked binaries, easier to redistribuite binariers, 
 concurency is easier here but meh.. 
+
+[![build status](https://gitlab.com/ov86/nimrepo/badges/master/pipeline.svg)](https://gitlab.com/ov86/nimrepo/commits/master)
 
 List of things to pin down:
 
