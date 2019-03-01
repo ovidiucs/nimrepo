@@ -18,4 +18,4 @@ deploy_staging:
   script:
     - echo "Deploy to staging server"
   only:
-    - maser
+    - master
